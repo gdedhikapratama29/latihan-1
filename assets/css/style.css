@@ -124,7 +124,20 @@ ion-icon { pointer-events: none; }
 
 address { font-style: normal; }
 
+html{
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
 
+body {
+  font-family: var(--fontFamily-opensans);
+  background-color: var(--bg-white);
+  color: var(--text-granite-gray);
+  font-size: var(--fontSize-6);
+  line-height: 1.65;
+}
+
+::placeholder { color: inherit; }
 
 
 /*-----------------------------------*\
