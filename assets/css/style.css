@@ -187,13 +187,22 @@ body {
 }
 
 .h3 {
-  aspect-ratio: var(--width) / var(--height);
-  width: min(var(--width), 100%);
-  object-fit: cover;
-  object-position: center;
-  height: var(--height);
-  border-radius: var(--radius-8);
+  font-size: var(--fontSize-3);
 }
+
+.img-holder {
+  aspect-ratio: var(--width) / var(--height);
+  background-color: var(--bg-light-gray);
+  overflow: hidden;
+}
+
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
 
 
 
@@ -316,6 +325,22 @@ body {
   #HERO
 \*-----------------------------------*/
 
+.hero .arrow {
+  display: none;
+}
+
+.hero {
+  background-color: var(--bg-seashell);
+  padding-block: 180px var(--section-spacing);
+}
+
+.hero-content {
+  order: 1;
+}
+
+.hero .section-text {
+  margin-block: 35px 40px;
+}
 
 
 
