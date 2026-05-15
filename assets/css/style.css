@@ -202,8 +202,25 @@ body {
   object-fit: cover;
 }
 
+.section {
+  padding-block: var(--section-spacing);
+}
 
+.text-center {
+  text-align: center;
+}
 
+.section-subtitle {
+  color: var(--text-sinopia);
+  text-transform: uppercase;
+  font-weight: var(--weight-semiBold);
+  margin-block-end: 10px;
+}
+
+.grid-list {
+  display: grid;
+  gap: 30px;
+}
 
 
 
@@ -348,6 +365,35 @@ body {
 /*-----------------------------------*\
   #POPULAR
 \*-----------------------------------*/
+
+.popular {
+  background-color: var(--bg-sinopia);
+}
+
+.popular :is(.section-subtitle, .title) {
+  color: var(--text-white);
+}
+
+.popular .section-title {
+  margin-block-end: 50px;
+}
+
+.popular-card {
+  background-color: var(--bg-white);
+  padding: 30px 20px;
+  border-radius: var(--radius-12);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.popular-card .card-icon img {
+  width: 30px;
+}
+
+.popular-card .card-title {
+  color: var(--text-rich-black-fogra-29);
+}
 
 
 
