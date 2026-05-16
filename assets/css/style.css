@@ -30,7 +30,7 @@
   /* text colors */
   --text-white: hsl(0, 0%, 100%);
   --text-black: hsl(0, 0%, 0%);
-  --text-sinopia: hsl(17, 100%, 44%);
+  --text-sinopia: hsl(0, 100%, 45%);
   --text-rich-black-fogra-29: hsl(207, 24%, 7%);
   --text-granite-gray: hsl(0, 0%, 40%);
 
@@ -393,9 +393,28 @@ body {
 
 .popular-card .card-title {
   color: var(--text-rich-black-fogra-29);
+  transition: var(--transition-1);
 }
 
+.popular-card .card-btn {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--border-cultured);
+  border-radius: var(--radius-5);
+  margin-inline-start: auto;
+  transition: var(--transition-1);
+}
 
+.popular-card:is(:hover, :focus-within) .card-title {
+  color: var(--text-sinopia);
+}
+
+.popular-card:is(:hover, :focus-within) .card-btn {
+  background-color: var(--bg-rich-black-fogra-29);
+  color: var(--text-white);
+}
 
 
 
